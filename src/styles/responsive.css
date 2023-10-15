@@ -1,0 +1,137 @@
+@media screen and (max-width: 576px) {
+  .navbar .nav-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #cacbb7;
+    width: 40%;
+  }
+
+  .hero {
+    min-height: 300px;
+  }
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-tagline {
+    font-size: 18px;
+  }
+
+  .hero-button {
+    font-size: 16px;
+    padding: 12px 15px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .restaurant-label {
+    font-size: 28px;
+  }
+
+  .posts {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .post-item-content {
+    padding: 16px;
+  }
+
+  .post-item-title a {
+    font-size: 18px;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .post-item-description {
+    font-size: 14px;
+  }
+
+  .read-more-link {
+    font-size: 16px;
+  }
+
+  .skip-to-content {
+    font-size: 12px;
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 900px) {
+  .navbar .nav-list {
+    width: 60%;
+  }
+
+  .nav-list.active li {
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    border-bottom: 1px solid #a47e1e;
+  }
+
+  .nav-list.active a {
+    color: #fff;
+    font-size: 1em;
+  }
+
+  .hero {
+    min-height: 400px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-tagline {
+    font-size: 22px;
+  }
+
+  .posts {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .post-item-content {
+    padding: 8px 18px;
+  }
+
+  .post-item-title a {
+    font-size: 16px;
+  }
+
+  .post-item-description {
+    font-size: 14px;
+  }
+
+  .read-more-link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1000px;
+  }
+  main {
+    max-width: 1200px;
+  }
+}
